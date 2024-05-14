@@ -1,0 +1,6 @@
+site_name: 漂移菌玩儿本地大模型
+nav:
+  - 主页: index.md
+  - 关于: about.md
+theme: readthedocs
+
