@@ -1,7 +1,36 @@
 site_name: 漂移菌玩儿本地大模型
 nav:
   - 主页: index.md
+  - 树莓派AIKit: 'md/01.RaspberryPi_AI_KIT/rpi_ai_kit.md'
   - 关于: about.md
-  - 付费课程: lessons.md
+
 theme: readthedocs
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list 
+  - md_in_html
+
+plugins:
+   - glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       skip_classes:
+         - custom-skip-class-name
+       auto_caption: false
+       caption_position: bottom  
+
+extra_css:
+  - docs/css/style.css
